@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+} body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background: #131313;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    margin: 2rem auto 0 auto;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    max-width: min(500px, 100% - 2rem);
+} h1 {
+    font-size: 4rem;
+} h1 + p {
+    flex: 0.35;
+    color: #999;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0.5rem 0.1rem;
+    width: 300px;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 1rem;
+} input:placeholder-shown {
+    letter-spacing: normal;
+} input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+p:has(#output) {
+    color: #666;
+} #output {
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+}
